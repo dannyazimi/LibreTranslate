@@ -11,8 +11,10 @@ RUN apt-get update -qq \
 
 RUN python -mvenv venv && ./venv/bin/pip install --no-cache-dir --upgrade pip
 
+COPY pyproject.toml .
+COPY LICENSE .
 COPY . .
-COPY LICENSE LICENSE
+
 
 # Install package from source code, compile translations
 RUN ./venv/bin/pip install Babel==2.12.1 && ./venv/bin/python scripts/compile_locales.py \
