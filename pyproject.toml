@@ -7,7 +7,7 @@ requires-python = ">=3.8"
 name = "libretranslate"
 description = "Free and Open Source Machine Translation API. Self-hosted, no limits, no ties to proprietary services."
 readme = "README.md"
-license = { file = "LICENSE.txt" }
+license = { file = "LICENSE" }
 authors = [
     { name = "Piero Toffanin", email = "pt@uav4geo.com" },
     { name = "LibreTranslate Authors" },
